@@ -1,0 +1,156 @@
+<!doctype html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>Acasa</title>
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+  <link type="text/css" rel="stylesheet" media="all" th:href="@{/bootstrap/css/bootstrap.min.css}"/>
+  <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+  <meta name="theme-color" content="#7952b3">
+  <link rel="stylesheet" type="text/css" media="all" th:href="@{/sbadmin/css/styles.css}">
+
+  <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .container-catalog-online {
+        background-color: #92B5C1;
+        height: 900px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-left: 160px;
+      }
+
+
+      .notele-mele-bg {
+        background-image: url('note.png');
+        background-size: cover;
+        background-color: transparent;
+      }
+
+      .disciplinele-mele-bg {
+        background-image: url('discipline.png');
+        background-size: cover;
+        background-color: transparent;
+      }
+
+      .programare-examene-bg {
+        background-image: url('examene.png');
+        background-size: cover;
+        background-color: transparent;
+      }
+
+      .container-notele-mele, .container-disciplinele-mele, .container-programare-examene {
+        border: 2px solid #000;
+        margin-bottom: 10px;
+      }
+
+    </style>
+</head>
+<body>
+
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6"> <!-- containerul pentru textul de catalog online -->
+        <section class="py-5 text-center">
+          <div class="bg-pers" style="min-width:100%">
+            <div class="col-md-6 container-catalog-online">
+              <div>
+                <h1 class="fw-light">Platformă Educațională Online</h1>
+                <br>
+                <p>Salutare! Acesta este catalogul online al universității tale. Platforma creată are rolul de a integra toate instrumentele necesare unui student de a vizualiza conținutul catalogului său. Se pot accesa notele primite de către student și se oferă toate detaliile cu privire la nota obținută, la situația actuală și la departament. </p>
+                <p>Secțiunea Disciplinele mele oferă informații cu privire la codul unei discipline, denumirea, anul și numărul de credite al acesteia.</p>
+                <p>De asemenea, ai posibilitatea de a programa examenele la data și ora la care se vor desfășura.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="col-md-6">
+        <div class="py-5">
+          <div class="container-notele-mele">
+            <div class="notele-mele-bg">   <!-- sectiunea pentru notele mele -->
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <rect width="100%" height="100%" fill="transparent"/>
+                <text x="50%" y="50%" fill="#000" dy=".3em" font-size="36px">Notele mele</text>
+              </svg>
+            </div>
+            <div class="card-body">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary"><a href="grades">Vizualizeaza notele</a></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-disciplinele-mele">
+            <div class="disciplinele-mele-bg"> <!-- sectiunea pentru disciplinele mele -->
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <rect width="100%" height="100%" fill="transparent"/>
+                  <text x="50%" y="50%" fill="#000" dy=".3em " font-size="36px">Disciplinele mele</text>
+                </svg>
+              </div>
+              <div class="card-body">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="courses">Vizualizeaza disciplinele</a></button>
+                </div>
+              </div>
+          </div>
+
+          <div class="container-programare-examene">
+            <div class="programare-examene-bg"> <!-- sectiunea pentru programare examene -->
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <rect width="100%" height="100%" fill="transparent"/>
+                  <text x="50%" y="50%" fill="#000" dy=".3em" font-size="36px">Programare examene</text>
+                </svg>
+              </div>
+              <div class="card-body">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="exams">Vizualizeaza examene</a></button>
+                </div>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Back to top</a>
+    </p>
+    <p class="mb-1">Pentru accesarea materialelor de studiu de pe site-ul principal al universității accesează următorul link.</p>
+    <a href="https://www.unitbv.ro" class="btn btn-sm btn-outline-secondary">Unitbv</a>
+    <p class="mb-0">
+      TELEFON: +40 -(268) 41.30.00
+      <br>
+      EMAIL: rectorat@unitbv.ro
+    </p>
+  </div>
+</footer>
+
+<script th:src="@{/sbadmin/js/scripts.js}"></script>
+
+</body>
+</html>
